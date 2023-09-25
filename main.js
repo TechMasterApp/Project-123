@@ -20,7 +20,12 @@ function setup() {
 }
 
 function draw() {
-
+    wristdiff = Math.floor(abs(lwx - rwx))
+    document.getElementById("fontsize").innerHTML = "Font size of the text will be: " + wristdiff
+    background("cornflowerblue")
+    text('Bruh', nx, ny)
+    textSize(wristdiff)
+    fill("red")
 }
 
 function modelLoaded() {
